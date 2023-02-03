@@ -29,7 +29,7 @@ const putData = async (e) => {
   const uname = username.value.trim();
   const points = Number(sc.value.trim());
   if (uname && points) {
-    const postData = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/iTrISlBXlaWu8ZH27F8E/scores', {
+    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/iTrISlBXlaWu8ZH27F8E/scores', {
       method: 'POST',
       body: JSON.stringify({
         user: uname,
@@ -39,11 +39,9 @@ const putData = async (e) => {
         'Content-type': 'application/json; charset=UTF-8',
       },
     });
-    const res = (await postData.json());
-    console.log(await res);
     feedList();
   } else {
-    alert('Null values not accepted');
+    feedList();
   }
   username.value = '';
   sc.value = '';
