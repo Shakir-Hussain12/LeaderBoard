@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-    background: linear-gradient(to right, blue, transparent);
+  background: linear-gradient(to right, blue, transparent);
 }
 
 h1 {
@@ -34,32 +34,32 @@ h1 {
 
 .left > h2 {
   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid;
-    padding: 3%;
-    border-radius: 5px;
-    background-color: whitesmoke;
-    box-shadow: 2px 2px 2px black;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid;
+  padding: 3%;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 2px black;
 }
 
 .scores {
   list-style: none;
-    padding-inline-start: 0;
-    border: 1px solid;
-    padding: 2% 0;
-    box-shadow: 5px 5px 5px grey;
-    border-radius: 5px;
-    background: linear-gradient(45deg, white, transparent);
-    margin-top: -8%;
-    border-top: none;
+  padding-inline-start: 0;
+  border: 1px solid;
+  padding: 2% 0;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 5px;
+  background: linear-gradient(45deg, white, transparent);
+  margin-top: -8%;
+  border-top: none;
 }
 
 .list-item {
   padding-inline-start: 5%;
   letter-spacing: 1px;
   font-weight: bold;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 30px;
 }
 
@@ -78,15 +78,15 @@ input[type=text] {
 
 button[type=submit] {
   float: right;
-    min-width: 38%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: greenyellow;
-    border-radius: 8px;
-    font-weight: bold;
-    border: 1px solid;
-    padding: 2% 5%;
+  min-width: 38%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: greenyellow;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 1px solid;
+  padding: 2% 5%;
 }
 
 .inactive {
