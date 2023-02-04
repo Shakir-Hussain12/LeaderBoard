@@ -15,6 +15,7 @@ const getData = async () => {
 const feedList = async () => {
   const fillBoard = await getData();
   list.innerHTML = '';
+  list.classList.remove('inactive');
   fillBoard.result.forEach((item) => {
     if (typeof item.user !== 'object') {
       const li = list.appendChild(document.createElement('li'));

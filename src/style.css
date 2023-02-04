@@ -1,10 +1,14 @@
 body {
   box-sizing: border-box;
+    background: linear-gradient(to right, blue, transparent);
 }
 
 h1 {
-  margin-inline-start: 18%;
-  margin-top: 10%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-decoration: underline;
 }
 
 .wrapper {
@@ -15,32 +19,53 @@ h1 {
 }
 
 .left {
-  min-width: 350px;
+  min-width: 300px;
+}
+
+.right {
+  background: linear-gradient(120deg, white, transparent);
+  padding: 0 5%;
+  border-radius: 10px;
+  max-height: 28vh;
+  padding-bottom: 2%;
+  margin-top: 2%;
+  box-shadow: 5px 5px 5px black;
 }
 
 .left > h2 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    padding: 3%;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px black;
 }
 
 .scores {
   list-style: none;
-  padding-inline-start: 0;
-  border: 1px solid;
-  padding: 2% 0;
-  box-shadow: 5px 5px 5px gray;
-  border-radius: 5px;
+    padding-inline-start: 0;
+    border: 1px solid;
+    padding: 2% 0;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 5px;
+    background: linear-gradient(45deg, white, transparent);
+    margin-top: -8%;
+    border-top: none;
 }
 
 .list-item {
   padding-inline-start: 5%;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
+  line-height: 30px;
 }
 
 .list-item:nth-child(even) {
-  background: lightgray;
+  background: black;
+  color: white;
 }
 
 input[type=text] {
@@ -53,4 +78,36 @@ input[type=text] {
 
 button[type=submit] {
   float: right;
+    min-width: 38%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: greenyellow;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid;
+    padding: 2% 5%;
+}
+
+.inactive {
+  display: none;
+}
+
+.ref {
+  display: flex;
+  min-width: 30%;
+  justify-content: space-evenly;
+  flex-direction: row;
+  font-weight: bold;
+  background-color: gold;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+input[type=text]:focus {
+  background-color: lightskyblue;
+}
+
+button:hover {
+  cursor: pointer;
 }
